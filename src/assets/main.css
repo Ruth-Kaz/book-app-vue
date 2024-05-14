@@ -1,0 +1,80 @@
+:root {
+  --color: #fffdf8;
+  --glass-background: #ffffff1b;
+  --dark-blue: rgb(22 29 45);
+
+  /* Glass effect */
+  --border-radius: 16px;
+  --box-shadow: 0 4px 30px rgba(0, 0, 0, 0.435);
+  --backdrop-filter: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  --border: 1px solid rgba(255, 255, 255, 0.107);
+  --border-radius: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.glass-effect {
+  box-shadow: var(--box-shadow);
+  backdrop-filter: var(--backdrop-filter);
+  -webkit-backdrop-filter: var(--webkit-backdrop-filter);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  transition: 0.5s;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--color);
+  margin: 0;
+}
+
+main {
+  padding: 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--color);
+  white-space: pre-line;
+  height: 12rem;
+  width: 85%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+/* .container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+} */
+
+.section {
+  padding-top: 13rem;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
